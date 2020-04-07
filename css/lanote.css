@@ -1,0 +1,77 @@
+.conteneurnote {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin: 2em 2em;
+}
+
+#trait1 {
+  position: absolute;
+  top: 21%;
+  right: 35.5%;
+  height: 3.2%;
+  width: 29.5%;
+}
+
+#trait1:before {
+  display: inline-block;
+  content: "";
+  height: 0.1em;
+  width: 0%;
+  color: red;
+  margin-bottom: -12%;
+  background-color: red;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+#trait1:hover:before {
+  width: 100%;
+}
+
+#trait2 {
+  position: absolute;
+  top: 46.7%;
+  right: 36%;
+  height: 3.2%;
+  width: 29%;
+}
+
+#trait2:after {
+  content: "";
+  display: inline-block;
+  height: 0.1em;
+  width: 0%;
+  margin-bottom: -12%;
+  background-color: red;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+#trait2:hover:after {
+  width: 100%;
+}
+
+#trait3 {
+  position: absolute;
+  top: 68%;
+  right: 36%;
+  height: 3.2%;
+  width: 29%;
+}
+
+#trait3:after {
+  content: "";
+  display: inline-block;
+  height: 0.1em;
+  width: 0%;
+  margin-bottom: -12%;
+  background-color: red;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+#trait3:hover:after {
+  width: 100%;
+}
+/*# sourceMappingURL=lanote.css.map */
