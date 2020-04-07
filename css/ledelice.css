@@ -7,10 +7,10 @@
 
 #trait1 {
   position: absolute;
-  top: 21%;
-  right: 35.5%;
+  top: 23.5%;
+  right: 34%;
   height: 3.2%;
-  width: 29.5%;
+  width: 32%;
 }
 
 #trait1:before {
@@ -18,9 +18,8 @@
   content: "";
   height: 0.1em;
   width: 0%;
-  color: red;
   margin-bottom: -12%;
-  background-color: #3b1519;
+  background-color: #3a4fa2;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
@@ -31,10 +30,10 @@
 
 #trait2 {
   position: absolute;
-  top: 46.7%;
-  right: 36%;
+  top: 44%;
+  right: 34%;
   height: 3.2%;
-  width: 29%;
+  width: 32%;
 }
 
 #trait2:after {
@@ -43,7 +42,7 @@
   height: 0.1em;
   width: 0%;
   margin-bottom: -12%;
-  background-color:  #3b1519;
+  background-color: #416db5;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
@@ -54,10 +53,10 @@
 
 #trait3 {
   position: absolute;
-  top: 68%;
-  right: 36%;
+  top: 63.7%;
+  right: 33.7%;
   height: 3.2%;
-  width: 29%;
+  width: 32%;
 }
 
 #trait3:after {
@@ -66,7 +65,7 @@
   height: 0.1em;
   width: 0%;
   margin-bottom: -12%;
-  background-color: #3b1519;
+  background-color: #4e96d1;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
 }
@@ -74,4 +73,4 @@
 #trait3:hover:after {
   width: 100%;
 }
-/*# sourceMappingURL=lanote.css.map */
+/*# sourceMappingURL=ledelice.css.map */

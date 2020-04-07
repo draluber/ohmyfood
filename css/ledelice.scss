@@ -1,0 +1,75 @@
+.conteneurnote {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 2em 2em;
+  }
+  
+  #trait1 {
+    position: absolute;
+    top: 23.5%;
+    right: 34%;
+    height: 3.2%;
+    width: 32%;
+  }
+  
+  #trait1:before {
+    display: inline-block;
+    content: "";
+    height: 0.1em;
+    width: 0%;
+    margin-bottom: -12%;
+    background-color: #3a4fa2;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  #trait1:hover:before {
+    width: 100%;
+  }
+  
+  #trait2 {
+    position: absolute;
+    top: 44%;
+    right: 34%;
+    height: 3.2%;
+    width: 32%;
+  }
+  
+  #trait2:after {
+    content: "";
+    display: inline-block;
+    height: 0.1em;
+    width: 0%;
+    margin-bottom: -12%;
+    background-color: #416db5;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  #trait2:hover:after {
+    width: 100%;
+  }
+  
+  #trait3 {
+    position: absolute;
+    top: 63.7%;
+    right: 33.7%;
+    height: 3.2%;
+    width: 32%;
+  }
+  
+  #trait3:after {
+    content: "";
+    display: inline-block;
+    height: 0.1em;
+    width: 0%;
+    margin-bottom: -12%;
+    background-color: #4e96d1;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+  }
+  
+  #trait3:hover:after {
+    width: 100%;
+  }

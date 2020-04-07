@@ -15,6 +15,7 @@ header{
     }
 }
 h1{
+  font-size: 2em;
     color: #fdcb46;
 }
 .conteneur{
@@ -29,18 +30,21 @@ h1{
     justify-content: center;
 }
   .index{
+    border-radius: 2%;
+    box-shadow: 0 0 0.5em ;
+    max-width: 40%;
     margin-top: 2rem;
     margin-right: 3rem;
     overflow: hidden;
-    width: 40%;
-    height: 679px;
+    max-width: 40%;
+    height: auto;
     text-align: center;
    }
  img{
         border-radius: 2%;
         box-shadow: 0 0 1.5em ;
         max-width: 100%;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.4s ease-in-out;
      }
  .index:hover img{
       transform: scale(1.2);
@@ -86,13 +90,15 @@ footer{
     bottom: 0;
     width: 100%;
     & .conteneurfooter{
-        height: 2em;
+        height: 3em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         font-size: 1em;
         background-color: #579c87;
+        padding-right: 2em;
+        padding-left: 2em;
              & a{
                 color:#fdcb46;
                 text-decoration: none;
@@ -117,67 +123,3 @@ footer{
              90% {transform: translate(1px, 2px) rotate(0deg);}
              100% {transform: translate(1px, -2px) rotate(-1deg);}
          }
-.conteneurnote{
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  margin: 2rem 2rem;
-}
-#trait1{
-	position: absolute;
-	top: 21%;
-	right: 44%;
-	height: 100px;
-  width: 160px;
-  color: red;
-}
-#trait1:before{
-  display: inline-block;
-  content: "";
-	height: 0.25em;
-	width: 0%;
-	margin-bottom:-40px;
-	background-color:red;
-	transition: width 0.5s;
-}
-#trait1:hover:before{
-	width: 100%;
-}
-#trait2{
-	position: absolute;
-	top: 80%;
-	right: 49%;
-	height: 60px;
-	width: 250px;
-}
-#trait2:after{
-	content: "";
-	display: block;
-	height: 0.25em;
-	width: 0%;
-	margin-bottom:9px;
-	background-color:#000;
-	transition: width 0.5s;
-}
-#trait2:hover:after{
-	width: 100%;
-}
-#trait3{
-	position: absolute;
-	top: 90%;
-	right: 47%;
-	height: 60px;
-	width: 300px;
-}
-#trait3:after{
-	content: "";
-	display: block;
-	height: 0.25em;
-	width: 0%;
-	margin-bottom:9px;
-	background-color:#000;
-	transition: width 0.5s;
-}
-#trait3:hover:after{
-	width: 100%;
-}
