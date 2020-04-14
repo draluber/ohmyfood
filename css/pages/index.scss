@@ -1,0 +1,145 @@
+@import '../ressources/commun.scss';
+.conteneur{
+    width: 100%;
+    margin-top: 2rem;
+}
+.corpdepage{
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conteneur-carte{
+  border-radius: 2%;
+  box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+  overflow: hidden;
+  width: 30%;
+  height: 50vmin;
+  max-width: 30%;
+  margin-top: 2rem;
+  margin-right: 2em;
+  margin-left: 2em; 
+}
+  .carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 6em;
+    transition: transform 0.4s ease-in-out;
+   }
+ .carte:hover{
+      transform: scale(1.2);
+      opacity: 0.6;
+    }   
+  a{
+      text-decoration: none;
+    }   
+  .note{
+    background-color: $couleur-menu1-bg;
+    & a {
+      color: $couleur-menu1-text;
+      
+      & h2{
+        font-family: 'Devonshire';
+      }
+      & p{
+        font-family: 'Tillana';
+        text-transform: uppercase;
+      }
+    }
+  }
+  .chic{
+    background-color: $couleur-menu2-bg;
+    & a {
+      color: $couleur-menu2-text;
+      & h2{
+        font-family: 'Croissant One';
+        background: linear-gradient(
+          to right,
+          $couleur-menu2-gradient-start 0%,
+          $couleur-menu2-gradient-end 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      & p{
+        font-family: 'Libre Baskerville';
+      }
+    }
+  }
+  .delice{
+    background-color: $couleur-menu3-bg;
+    & a {
+      color: $couleur-menu1-text;
+      & h2{
+        font-family: 'Parisienne';
+        color: $couleur-menu3-text;
+        background: linear-gradient(
+          to right,
+          $couleur-menu3-gradient-start 0%,
+          $couleur-menu3-gradient-end 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      & p{
+        font-family: 'Tillana';
+        color: $couleur-menu3-text;
+      }
+    }
+  }
+  .palette{
+    background-color: $couleur-menu3-bg;
+    & a {
+      color: $couleur-menu4-text;
+      & h2{
+        font-family: 'Kaushan Script';
+        color: $couleur-menu4-text;
+        background: linear-gradient(
+          to right,
+          $couleur-menu4-gradient-start 0%,
+          $couleur-menu4-gradient-end 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      & p{
+        font-family: 'Tillana';
+        color: $couleur-menu4-text;
+      }
+    }
+  }
+.prochainement{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4em;
+       & a{
+           width: 25%;
+           color:#fdcb46;
+        background-color: #579c87;
+        text-align: center;
+        border-radius: 10px;
+        padding: 0.5em 1.5em 0.5em 1.5em;
+        text-decoration: none;
+          
+       }
+      
+}
+#point1{
+    -webkit-animation: apparition 1500ms infinite;
+    animation: apparition 1500ms infinite;
+   }
+ #point2 {
+    -webkit-animation: apparition 1600ms infinite;
+    animation: apparition 1600ms infinite;
+  }
+ #point3 {
+    -webkit-animation: apparition 1700ms infinite;
+    animation: apparition 1700ms infinite;
+  } 

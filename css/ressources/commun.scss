@@ -1,0 +1,50 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'animations.scss';
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+}
+header{
+    height: 5rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: $couleur-vert;
+    & a{
+        text-decoration: none;
+        & h1{
+            font-size: 3rem;
+    padding-bottom: 2%;
+    padding-top: 2rem;
+    color: $couleur-jaune;
+        }
+    }
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    & .conteneurfooter{
+        height: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1em;
+        background-color: #579c87;
+        padding-right: 2em;
+        padding-left: 2em;
+             & a{
+                color:#fdcb46;
+                text-decoration: none;
+             }
+             & a:hover{
+                animation: bouge 0.5s;
+                animation-iteration-count: infinite;
+            }
+
+                      }
+         }

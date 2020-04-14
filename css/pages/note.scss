@@ -1,0 +1,86 @@
+@import '../ressources/commun.scss';
+.contenu{
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+.conteneur{
+    width: 80%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    margin-left: 5em;
+    padding: 0 0 0 0;   
+    background-color: $couleur-menu1-bg ;
+    border-radius: 2%;
+  box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+}
+.titre {
+    background-color: $couleur-menu1-bg;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    & h2{
+        font-family: "Devonshire";
+        font-size: 2em;
+    }
+}
+.table{
+    font-family: "Tillana";
+    font-size: 1.6rem;
+    width: 90%;
+    margin-left: 3rem;
+}
+.table-caption{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-weight: bold;
+}
+.element2{
+ padding-right: 8rem;
+ padding-left: 8rem;
+}
+.element22{
+ padding-right: 3rem;
+ padding-left: 3rem;
+}
+.element23{
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.p{
+   position: relative;
+}
+.p::after{
+  content: '';
+  transform-origin: 0 0; 
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .1em; 
+  background: $couleur-menu1-text;
+  opacity: 0.8;
+  transition: transform .3s;
+}
+.p:hover::after{
+    transform: scaleX(1.1);
+}
+.conteneur-footer{
+     background-color: $couleur-menu1-bg;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+     padding: 4rem 1rem;
+        & p{
+            font-family: "Devonshire";
+            font-size: 2em;
+            padding-left: 2rem;
+        }
+     }

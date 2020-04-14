@@ -1,0 +1,158 @@
+@import '../ressources/commun.scss';
+.contenu{
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+.conteneur{
+    font-family: 'Croissant One';
+    width: 85%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    margin-left: 5em;
+    padding: 0 0 3rem 0;   
+    background-color: $couleur-menu2-bg ;
+    border-radius: 2%;
+  box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+}
+.titre {
+    background-color: $couleur-menu2-bg;
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+      & .carte-titre{
+        font-family: 'Croissant One';
+        background: linear-gradient(
+          to right,
+          $couleur-menu2-gradient-start 0%,
+          $couleur-menu2-gradient-end 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  }
+.conteneur-table1{
+    font-family: 'Libre Baskerville';
+    color: $couleur-menu2-text;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-around;
+}
+.conteneur-table2{
+    font-family: 'Libre Baskerville';
+    color: $couleur-menu2-2-text;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-around;
+}
+.conteneur-table3{
+    font-family: 'Libre Baskerville';
+    color: $couleur-menu2-3-text;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-around;
+    padding-left: 3rem;
+}
+.ligne:nth-child(1),.ligne:nth-child(3),.ligne:nth-child(5){
+    flex-basis: 80%;
+    display: flex;
+    font-size: 1em; 
+}
+.ligne2:nth-child(1),.ligne2:nth-child(3),.ligne2:nth-child(5){
+    flex-basis: 80%;
+    display: flex;
+    font-size: 1em; 
+}
+.table-caption{
+    font-family: 'Libre Baskerville';
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-weight: bold;
+}
+.element21{
+    padding-left: 1rem;
+ padding-right: 1rem;
+ color: $couleur-menu2-text;
+}
+.element22{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: $couleur-menu2-2-text;
+}
+.element23{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: $couleur-menu2-3-text;
+}
+.p1,.p2,.p3{
+   position: relative;
+}
+.p1::after{
+  content: '';
+  transform-origin: 0 0; 
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .1em; 
+  background: $couleur-menu2-text;
+  opacity: 0.8;
+  transition: transform .3s;
+}
+.p2::after{
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .1em; 
+    background: $couleur-menu2-2-text;
+    opacity: 0.8;
+    transition: transform .3s;
+  }
+  .p3::after{
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .1em; 
+    background: $couleur-menu2-3-text;
+    opacity: 0.8;
+    transition: transform .3s;
+  }
+.p1:hover::after,.p2:hover::after,.p3:hover::after{
+    transform: scaleX(1.1);
+}
+.conteneur-footer{
+     background-color: $couleur-menu1-bg;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+     padding: 4rem 1rem;
+        & p{
+            font-family: "Devonshire";
+            font-size: 2em;
+            padding-left: 2rem;
+        }
+     }
