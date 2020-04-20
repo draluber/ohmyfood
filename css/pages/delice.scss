@@ -1,1 +1,158 @@
 @import '../ressources/commun.scss';
+.conteneur{
+    font-family: 'Parisienne';
+    width: 85%;
+    height: auto;
+    margin: 4rem auto 10rem auto;
+    padding: 4rem 0 6rem 0;   
+    background-color: $couleur-menu3-bg ;
+    border-radius: 2%;
+  box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+}
+.titre {
+    font-size: 4rem;
+    background-color: $couleur-menu3-bg;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 2rem;
+      & .carte-titre{
+        font-family: 'Parisienne';
+        background: linear-gradient(
+          to right,
+          $couleur-menu3-gradient-start 0%,
+          $couleur-menu3-gradient-end 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  }
+.conteneur-table1{
+    font-family: 'Tillana';
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-around;
+}
+.conteneur-table2{
+    font-family: 'Tillana';
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-around;
+}
+.conteneur-table3{
+    font-family: 'Tillana';
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content: space-around;
+}
+
+.ligne:nth-child(1),.ligne:nth-child(3),.ligne:nth-child(5){
+    flex-basis: 80%;
+    display: flex;
+    font-size: 1em; 
+    margin-bottom: 2rem;
+}
+.ligne2:nth-child(1),.ligne2:nth-child(3),.ligne2:nth-child(5){
+    flex-basis: 80%;
+    display: flex;
+    font-size: 1em;
+    margin-bottom: 2rem;
+}
+.ligne3:nth-child(1),.ligne3:nth-child(3),.ligne3:nth-child(5){
+    flex-basis: 80%;
+    display: flex;
+    font-size: 1em;
+    margin-bottom: 2rem;
+}
+.table-caption{
+    font-family: 'Tillana';
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.element21{
+    padding-left: 1rem;
+ padding-right: 1rem;
+ color: black;
+}
+.element22{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: black;
+}
+.element23{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: black;
+}
+.p1,.p2,.p3{
+   position: relative;
+}
+.p1::after{
+  content: '';
+  transform-origin: 0 0; 
+  transform: scaleX(0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .1em; 
+  background: $couleur-menu3-1-text;
+  opacity: 0.8;
+  transition: transform .3s;
+}
+.p2::after{
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .1em; 
+    background: $couleur-menu3-2-text;
+    opacity: 0.8;
+    transition: transform .3s;
+  }
+  .p3::after{
+    content: '';
+    transform-origin: 0 0; 
+    transform: scaleX(0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: .1em; 
+    background: $couleur-menu3-3-text;
+    opacity: 0.8;
+    transition: transform .3s;
+  }
+.p1:hover::after,.p2:hover::after,.p3:hover::after{
+    transform: scaleX(1.1);
+}
+.conteneur-footer{
+     background-color: $couleur-menu1-bg;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+     padding: 4rem 1rem;
+        & p{
+            font-family: "Devonshire";
+            font-size: 2em;
+            padding-left: 2rem;
+        }
+     }
