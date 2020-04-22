@@ -243,6 +243,12 @@ footer .conteneurfooter a:hover {
           box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
 }
 
+@media (max-width: 581px) {
+  .conteneur {
+    font-size: 0.7rem;
+  }
+}
+
 .titre {
   font-size: 4rem;
   background-color: #fdfefc;

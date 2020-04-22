@@ -251,7 +251,7 @@ footer .conteneurfooter a:hover {
 
 @media (max-width: 581px) {
   .conteneur {
-    font-size: small;
+    font-size: 0.7rem;
     padding: 0 0 0 0;
   }
 }

@@ -16,7 +16,8 @@
     box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
     @media (max-width:581px) {
       padding: 0 0 0 0;
-     }
+      font-size: 0.7rem;
+      }
 }
 .titre {
     background-color: $couleur-menu2-bg;
@@ -108,16 +109,24 @@
     padding-left: 1rem;
  padding-right: 1rem;
  color: $couleur-menu2-text;
-}
+  @media (max-width:581px) {
+  padding: 0 0 0 0; 
+}}
 .element22{
     padding-left: 3rem;
     padding-right: 3rem;
     color: $couleur-menu2-2-text;
+    @media (max-width:581px) {
+      padding: 0 0 0 0;
+      }
 }
 .element23{
     padding-left: 2rem;
     padding-right: 2rem;
     color: $couleur-menu2-3-text;
+    @media (max-width:581px) {
+      padding: 0 0 0 0;
+      }
 }
 .p1,.p2,.p3{
    position: relative;

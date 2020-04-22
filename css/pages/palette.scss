@@ -7,7 +7,10 @@
     padding: 4rem 0 6rem 0;   
     background-color: $couleur-menu4-bg ;
     border-radius: 2%;
-  box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+    box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+    @media (max-width:581px) {
+      font-size: 0.7rem;
+      }
 }
 .titre {
     font-size: 4rem;
