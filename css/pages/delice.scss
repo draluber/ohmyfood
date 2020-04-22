@@ -8,6 +8,9 @@
     background-color: $couleur-menu3-bg ;
     border-radius: 2%;
   box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+  @media (max-width:581px) {
+   font-size: 0.7rem;
+   }
 }
 .titre {
     font-size: 4rem;
@@ -87,16 +90,28 @@
     padding-left: 1rem;
  padding-right: 1rem;
  color: black;
+ @media (max-width:581px) {
+  padding-left: 0;
+  padding-right: 0;
+ }
 }
 .element22{
     padding-left: 3rem;
     padding-right: 3rem;
     color: black;
+    @media (max-width:581px) {
+      padding-left: 0;
+      padding-right: 0;
+     }
 }
 .element23{
     padding-left: 2rem;
     padding-right: 2rem;
     color: black;
+    @media (max-width:581px) {
+      padding-left: 0;
+      padding-right: 0;
+     }
 }
 .p1,.p2,.p3{
    position: relative;

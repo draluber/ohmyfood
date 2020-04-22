@@ -1,55 +1,22 @@
 @import 'reset.scss';
 @import 'variables.scss';
 @import 'animations.scss';
-@font-face {
-    font-family: 'CroissantOne';
-    src: url('/css/fonts/CroissantOne-Regular.ttf') format('truetype') ;
-  }
-  
-  @font-face {
-    font-family: 'Devonshire';
-    src: url('/css/fonts/Devonshire-Regular.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Tillana';
-    src: url('/css/fonts/Tillana-Regular.ttf');
-  }
-  
-  @font-face {
-    font-family: "KaushanScript";
-    src: url('/css/fonts/KaushanScript-Regular.ttf');
-  }
-  
-  @font-face {
-    font-family: "Libre Baskerville";
-    src: url('/css/fonts/LibreBaskerville-Regular.ttf');
-  }
-  
-  @font-face {
-    font-family: "Open Sans";
-    src: url('/css/fonts/OpenSans-Regular.ttf');
-  }
-  
-  @font-face {
-    font-family: "Parisienne";
-    src: url("/css/fonts/Parisienne-Regular.ttf");
-  }
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 25px;
 }
 header{
-    height: 5rem;
+    height: 6rem;
     line-height: 2rem;
     margin: 0 auto;
-    padding-top: 0.5rem;
+    padding-top: 2rem;
     text-align: center;
     background-color: $couleur-vert;
     & a{
         text-decoration: none;
         & h1{
             font-size: 3rem;
+            font-weight: bold;
             color: $couleur-jaune;
         }
     }
@@ -74,8 +41,11 @@ footer{
              }
              & a:hover{
                 animation: bouge 0.5s;
-                animation-iteration-count: infinite;
-            }
-
-                      }
+                animation-iteration-count: infinite;            
+             }
+             @media (max-width:581px) {
+              padding-left: 0;
+              padding-right: 0;
+             }
          }
+        }

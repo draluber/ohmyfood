@@ -161,51 +161,16 @@ td:not([align]), th:not([align]) {
   }
 }
 
-@font-face {
-  font-family: 'CroissantOne';
-  src: url("/css/fonts/CroissantOne-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Devonshire';
-  src: url("/css/fonts/Devonshire-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Tillana';
-  src: url("/css/fonts/Tillana-Regular.ttf");
-}
-
-@font-face {
-  font-family: "KaushanScript";
-  src: url("/css/fonts/KaushanScript-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Libre Baskerville";
-  src: url("/css/fonts/LibreBaskerville-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("/css/fonts/OpenSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Parisienne";
-  src: url("/css/fonts/Parisienne-Regular.ttf");
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 25px;
 }
 
 header {
-  height: 5rem;
+  height: 6rem;
   line-height: 2rem;
   margin: 0 auto;
-  padding-top: 0.5rem;
+  padding-top: 2rem;
   text-align: center;
   background-color: #599b86;
 }
@@ -216,6 +181,7 @@ header a {
 
 header a h1 {
   font-size: 3rem;
+  font-weight: bold;
   color: #fecb44;
 }
 
@@ -258,6 +224,13 @@ footer .conteneurfooter a:hover {
           animation-iteration-count: infinite;
 }
 
+@media (max-width: 581px) {
+  footer .conteneurfooter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .conteneur {
   width: 100%;
   margin-top: 2rem;
@@ -276,6 +249,19 @@ footer .conteneurfooter a:hover {
           justify-content: center;
 }
 
+@media (max-width: 581px) {
+  .corpdepage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+}
+
 .conteneur-carte {
   border-radius: 2%;
   -webkit-box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
@@ -287,6 +273,14 @@ footer .conteneurfooter a:hover {
   margin-top: 2rem;
   margin-right: 2em;
   margin-left: 2em;
+}
+
+@media (max-width: 581px) {
+  .conteneur-carte {
+    width: 80%;
+    max-width: 80%;
+    margin: 1rem 1rem;
+  }
 }
 
 .carte {
@@ -301,11 +295,18 @@ footer .conteneurfooter a:hover {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
-  margin-top: 6em;
+  margin-top: 4em;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+@media (max-width: 581px) {
+  .carte {
+    margin: 0 0 0 0;
+    padding-top: 2rem;
+  }
 }
 
 .carte:hover {
@@ -318,6 +319,18 @@ a {
   text-decoration: none;
 }
 
+.image_note {
+  width: 3rem;
+  height: 3.4rem;
+}
+
+@media (max-width: 581px) {
+  .image_note {
+    width: 1rem;
+    height: 1.2rem;
+  }
+}
+
 .note {
   background-color: #fbdfda;
 }
@@ -328,6 +341,7 @@ a {
 
 .note a h2 {
   font-family: 'Devonshire';
+  padding-bottom: 1rem;
 }
 
 .note a p {
@@ -350,6 +364,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
 }
 
 .chic a p {
@@ -372,6 +387,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
 }
 
 .delice a p {
@@ -395,6 +411,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-bottom: 1rem;
 }
 
 .palette a p {
@@ -412,7 +429,7 @@ a {
   padding-bottom: 4em;
 }
 
-.prochainement a {
+.prochainement p {
   width: 25%;
   color: #fdcb46;
   background-color: #579c87;
@@ -422,18 +439,34 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 1190px) {
+  .prochainement p {
+    font-size: 0.8rem;
+    width: 19%;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .prochainement p {
+    font-size: 0.8rem;
+    width: 40%;
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  }
+}
+
 #point1 {
   -webkit-animation: apparition 1500ms infinite;
-  animation: apparition 1500ms infinite;
+          animation: apparition 1500ms infinite;
 }
 
 #point2 {
   -webkit-animation: apparition 1600ms infinite;
-  animation: apparition 1600ms infinite;
+          animation: apparition 1600ms infinite;
 }
 
 #point3 {
   -webkit-animation: apparition 1700ms infinite;
-  animation: apparition 1700ms infinite;
+          animation: apparition 1700ms infinite;
 }
 /*# sourceMappingURL=index.css.map */

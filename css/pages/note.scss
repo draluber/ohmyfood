@@ -1,6 +1,7 @@
 @import '../ressources/commun.scss';
 .contenu{
     margin-top: 3rem;
+    font-family: "Tillana";
     text-align: center;
     font-weight: bold;
 
@@ -13,6 +14,10 @@
     background-color: $couleur-menu1-bg ;
     border-radius: 2%;
   box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+     @media (max-width: 581px){
+         font-size: small;
+         padding: 0 0 0 0;
+     }
 }
 .titre {
     background-color: $couleur-menu1-bg;
@@ -24,6 +29,7 @@
     & h2{
         font-family: "Devonshire";
         font-size: 2em;
+
     }
 }
 .conteneur-table1{
@@ -51,6 +57,9 @@
     font-size: 1em;
     justify-content: space-around;
     padding-left: 3rem;
+    @media (max-width:581px){
+        padding: 0 0 0 0;
+    }
 }
 .ligne:nth-child(1),.ligne:nth-child(3),.ligne:nth-child(5),.ligne:nth-child(7){
     flex-basis: 80%;
@@ -78,21 +87,36 @@
     margin-left: 0;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    & .element{
+        @media (max-width:581px){
+            padding: 0 0 0 0;
+        }
+    }
 }
 .element1{
  padding-left: 4rem;
  padding-right: 4rem;
  color: black;
+ @media (max-width:581px){
+    padding: 0 0 0 0;
+}
 }
 .element2{
     padding-left: 1rem;
     padding-right: 1rem;
     color: black;
+    @media (max-width:581px){
+        padding: 0 0 0 0;
+    }
+    
 }
 .element3{
     padding-left: 1rem;
     padding-right: 1rem;
     color: black;
+    @media (max-width:581px){
+        padding: 0 0 0 0;
+    }
 }
 .p1,.p2,.p3{
    position: relative;
@@ -140,15 +164,13 @@
     transform: scaleX(1.1);
 }
 .conteneur-footer{
-    background-color: $couleur-menu1-bg;
-    width: 100%;
-    height: auto;
-    display: inline-flex;
-    justify-content: center;
-    padding: 4rem 1rem;
-        & p{
-            font-family: "Devonshire";
-            font-size: 2em;
-            padding-left: 2rem;
-        }
-     }
+    text-align: center;
+    & img{
+        width:   3rem;
+        height: 3.2rem;
+    }
+    & p{
+        font-family: "Devonshire";
+    }
+}
+

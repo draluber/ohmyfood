@@ -13,7 +13,10 @@
     padding: 4rem 0 6rem 0;   
     background-color: $couleur-menu2-bg ;
     border-radius: 2%;
-  box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+    box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+    @media (max-width:581px) {
+      padding: 0 0 0 0;
+     }
 }
 .titre {
     background-color: $couleur-menu2-bg;
@@ -41,6 +44,9 @@
     flex-wrap: wrap;
     font-size: 0.8em;
     justify-content: space-around;
+    @media (max-width:581px) {
+      padding: 0 0 0 0;
+     }
 }
 .conteneur-table2{
     font-family: 'Libre Baskerville';
@@ -51,6 +57,9 @@
     flex-wrap: wrap;
     font-size: 0.8em;
     justify-content: space-around;
+    @media (max-width:581px) {
+        padding: 0 0 0 0;
+     }
 }
 .conteneur-table3{
     font-family: 'Libre Baskerville';
@@ -62,6 +71,9 @@
     flex-wrap: wrap;
     font-size: 0.8em;
     justify-content: space-around;
+    @media (max-width:581px) {
+      padding: 0 0 0 0;
+     }
 }
 
 .ligne:nth-child(1),.ligne:nth-child(3),.ligne:nth-child(5){

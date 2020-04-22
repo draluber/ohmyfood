@@ -88,16 +88,28 @@
  padding-left: 4rem;
  padding-right: 4rem;
  color: black;
+ @media (max-width:581px) {
+  padding-left: 0;
+  padding-right: 0;
+ }
 }
 .element22{
     padding-left: 1rem;
     padding-right: 1rem;
     color: black;
+    @media (max-width:581px) {
+      padding-left: 0;
+      padding-right: 0;
+     }
 }
 .element23{
     padding-left: 1rem;
     padding-right: 1rem;
     color: black;
+    @media (max-width:581px) {
+      padding-left: 0;
+      padding-right: 0;
+     }
 }
 .p1,.p2,.p3{
    position: relative;

@@ -10,6 +10,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width:581px) {
+      flex-direction: column;
+      align-content: center;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+  }
 }
 .conteneur-carte{
   border-radius: 2%;
@@ -21,6 +27,11 @@
   margin-top: 2rem;
   margin-right: 2em;
   margin-left: 2em; 
+  @media (max-width:581px) {
+    width: 80%;
+    max-width: 80%;
+    margin: 1rem 1rem;
+}
 }
   .carte{
     display: flex;
@@ -28,8 +39,12 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    margin-top: 6em;
+    margin-top: 4em;
     transition: transform 0.4s ease-in-out;
+    @media (max-width:581px) {
+        margin: 0 0 0 0;
+        padding-top: 2rem;
+    }
    }
  .carte:hover{
       transform: scale(1.2);
@@ -38,13 +53,24 @@
   a{
       text-decoration: none;
     }   
+  .image_note{
+    width: 3rem;
+    height: 3.4rem ;
+    @media (max-width: 581px)
+    {
+      width: 1rem;
+      height: 1.2rem;
+    }
+  }
   .note{
     background-color: $couleur-menu1-bg;
     & a {
+
       color: $couleur-menu1-text;
       
       & h2{
         font-family: 'Devonshire';
+        padding-bottom: 1rem;
       }
       & p{
         font-family: 'Tillana';
@@ -66,6 +92,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding-bottom: 1rem;
       }
       & p{
         font-family: 'Libre Baskerville';
@@ -87,6 +114,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding-bottom: 1rem;
       }
       & p{
         font-family: 'Tillana';
@@ -109,6 +137,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding-bottom: 1rem;
       }
       & p{
         font-family: 'Tillana';
@@ -120,27 +149,34 @@
     display: flex;
     justify-content: center;
     padding-bottom: 4em;
-       & a{
+       & p{
            width: 25%;
            color:#fdcb46;
-        background-color: #579c87;
-        text-align: center;
-        border-radius: 10px;
-        padding: 0.5em 1.5em 0.5em 1.5em;
-        text-decoration: none;
-          
+           background-color: #579c87;
+           text-align: center;
+           border-radius: 10px;
+           padding: 0.5em 1.5em 0.5em 1.5em;
+           text-decoration: none;  
+           @media (max-width: 1190px)
+            {
+              font-size: 0.8rem;
+              width: 19%;
+              padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            } 
+            @media (max-width: 690px)
+            {
+              font-size: 0.8rem;
+              width: 40%;
+              padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+            } 
+           }        
        }
-      
-}
 #point1{
-    -webkit-animation: apparition 1500ms infinite;
     animation: apparition 1500ms infinite;
    }
  #point2 {
-    -webkit-animation: apparition 1600ms infinite;
     animation: apparition 1600ms infinite;
   }
  #point3 {
-    -webkit-animation: apparition 1700ms infinite;
     animation: apparition 1700ms infinite;
   } 
