@@ -34,29 +34,34 @@
   }
 .conteneur-table1{
     font-family: 'Libre Baskerville';
+    padding-left: 4rem;
+    padding-right: 4rem;
     color: $couleur-menu2-text;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1em;
+    font-size: 0.8em;
     justify-content: space-around;
 }
 .conteneur-table2{
     font-family: 'Libre Baskerville';
+    padding-left: 4rem;
+    padding-right: 4rem;
     color: $couleur-menu2-2-text;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1em;
+    font-size: 0.8em;
     justify-content: space-around;
 }
 .conteneur-table3{
     font-family: 'Libre Baskerville';
     color: $couleur-menu2-3-text;
+    padding-left: 6rem;
+    padding-right: 4rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 1em;
+    font-size: 0.8em;
     justify-content: space-around;
-    padding-left: 3rem;
 }
 
 .ligne:nth-child(1),.ligne:nth-child(3),.ligne:nth-child(5){

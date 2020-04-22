@@ -1,6 +1,40 @@
 @import 'reset.scss';
 @import 'variables.scss';
 @import 'animations.scss';
+@font-face {
+    font-family: 'CroissantOne';
+    src: url('/css/fonts/CroissantOne-Regular.ttf') format('truetype') ;
+  }
+  
+  @font-face {
+    font-family: 'Devonshire';
+    src: url('/css/fonts/Devonshire-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Tillana';
+    src: url('/css/fonts/Tillana-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: "KaushanScript";
+    src: url('/css/fonts/KaushanScript-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: "Libre Baskerville";
+    src: url('/css/fonts/LibreBaskerville-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: url('/css/fonts/OpenSans-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: "Parisienne";
+    src: url("/css/fonts/Parisienne-Regular.ttf");
+  }
 body{
     font-family: "Open Sans", sans-serif;
     font-size: 25px;
@@ -15,6 +49,7 @@ header{
     & a{
         text-decoration: none;
         & h1{
+            font-size: 3rem;
             color: $couleur-jaune;
         }
     }
