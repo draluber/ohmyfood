@@ -239,14 +239,14 @@ footer .conteneurfooter a:hover {
 }
 
 .conteneur {
-  width: 80%;
+  width: 85%;
   height: auto;
   margin: 4rem auto 10rem auto;
   padding: 4rem 0 6rem 0;
-  background-color: #fbdfda;
   border-radius: 2%;
   -webkit-box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
           box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+  background-color: #fbdfda;
 }
 
 @media (max-width: 581px) {
@@ -359,6 +359,7 @@ footer .conteneurfooter a:hover {
   margin-left: 0;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  font-weight: bold;
 }
 
 @media (max-width: 581px) {

@@ -243,10 +243,10 @@ footer .conteneurfooter a:hover {
   height: auto;
   margin: 4rem auto 10rem auto;
   padding: 4rem 0 6rem 0;
-  background-color: #fef4f8;
   border-radius: 2%;
   -webkit-box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
           box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+  background-color: #fef4f8;
 }
 
 @media (max-width: 581px) {
@@ -481,24 +481,5 @@ footer .conteneurfooter a:hover {
 .p1:hover::after, .p2:hover::after, .p3:hover::after {
   -webkit-transform: scaleX(1.1);
           transform: scaleX(1.1);
-}
-
-.conteneur-footer {
-  background-color: #fbdfda;
-  width: 100%;
-  height: auto;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 4rem 1rem;
-}
-
-.conteneur-footer p {
-  font-family: "Devonshire";
-  font-size: 2em;
-  padding-left: 2rem;
 }
 /*# sourceMappingURL=chic.css.map */

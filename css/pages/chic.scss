@@ -3,17 +3,11 @@
     margin-top: 3rem;
     text-align: center;
     font-weight: bold;
-
 }
 .conteneur{
     font-family: 'Croissant One';
-    width: 85%;
-    height: auto;
-    margin: 4rem auto 10rem auto;
-    padding: 4rem 0 6rem 0;   
-    background-color: $couleur-menu2-bg ;
-    border-radius: 2%;
-    box-shadow: 0 0 0.8rem 0 rgba(152, 153, 151, 0.6);
+    @include conteneur ;
+    background-color: $couleur-menu2-bg ; 
     @media (max-width:581px) {
       padding: 0 0 0 0;
       font-size: 0.7rem;
@@ -78,32 +72,17 @@
 }
 
 .ligne:nth-child(1),.ligne:nth-child(3),.ligne:nth-child(5){
-    flex-basis: 80%;
-    display: flex;
-    font-size: 1em; 
-    margin-bottom: 2rem;
+    @include ligne;
 }
 .ligne2:nth-child(1),.ligne2:nth-child(3),.ligne2:nth-child(5){
-    flex-basis: 80%;
-    display: flex;
-    font-size: 1em;
-    margin-bottom: 2rem;
+    @include ligne;
 }
 .ligne3{
   margin-bottom: 2rem;
 }
 .table-caption{
     font-family: 'Libre Baskerville';
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: 0;
-    margin-left: 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    font-weight: bold;
+    @include table-caption;
 }
 .element21{
     padding-left: 1rem;
@@ -173,16 +152,3 @@
 .p1:hover::after,.p2:hover::after,.p3:hover::after{
     transform: scaleX(1.1);
 }
-.conteneur-footer{
-     background-color: $couleur-menu1-bg;
-    width: 100%;
-    height: auto;
-    display: inline-flex;
-    justify-content: center;
-     padding: 4rem 1rem;
-        & p{
-            font-family: "Devonshire";
-            font-size: 2em;
-            padding-left: 2rem;
-        }
-     }
